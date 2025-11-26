@@ -111,10 +111,8 @@ def get_gemini_response(chat_history):
         # Generate response
         response = model.generate_content(conversation)
         
-        # Clean up the response text
-        cleaned_text = response.text.replace('*', '').replace('|', '').replace('\n', '<br>')
-        
-        return cleaned_text
+        # Return raw text (Markdown)
+        return response.text
     except Exception as e:
         print(f"Gemini API Error: {e}")
         return f"Error: Could not connect to Nexus AI. Please try again. ({e})"
@@ -141,7 +139,12 @@ def index():
     
     # Handle POST request (when user sends a message)
     if request.method == 'POST':
-        user_message_text = request.form['message']
+        # Check if it's a JSON request (AJAX) or Form data
+        if request.is_json:
+            data = request.get_json()
+            user_message_text = data.get('message')
+        else:
+            user_message_text = request.form.get('message')
         
         if user_message_text: # Process only if the message is not empty
             
@@ -158,7 +161,11 @@ def index():
             # 4. Save the updated history back to the session
             session['chat_history'] = current_history
             
-        # Redirect back to the GET route to display the updated chat
+            # Return JSON response for AJAX
+            if request.is_json:
+                return {"user_message": user_message_text, "ai_response": ai_response_text}
+            
+        # Redirect back to the GET route to display the updated chat (fallback for non-JS)
         return redirect(url_for('index'))
 
     # Handle GET request (display the page)
