@@ -1,5 +1,8 @@
 # **NEXUS AI — Intelligent Web Chatbot**
 **Task 3 – CODTECH Internship | AI Chatbot with NLP**
+
+---
+
 ### **COMPANY:** CODTECH IT SOLUTIONS  
 ### **NAME:** AMAAN SHAIKH  
 ### **INTERN ID:** CT06DR1460 
@@ -78,6 +81,7 @@ python app.py
 
 ### **4️⃣ Open The Browser**
 http://127.0.0.1:5000
+
 
 
 
