@@ -64,22 +64,6 @@ It fulfills the requirements of CODTECH **Task 3 – AI Chatbot with NLP**.
 - 📜 Model listing script  
 - 🧠 NLP-supported message processing  
 
----
-
-## 📁 **Project Structure**
-Nexus-AI/
-│── static/
-│ ├── style.css
-│ ├── favicon.png
-│── templates/
-│ ├── index.html
-│── app.py
-│── list_models.py
-│── requirements.txt
-│── Procfile
-│── .env
-│── README.md
-
 ## 🛠 **Installation & Setup**
 
 ### **1️⃣ Clone the project**
@@ -94,5 +78,6 @@ python app.py
 
 ### **4️⃣ Open The Browser**
 http://127.0.0.1:5000
+
 
 
