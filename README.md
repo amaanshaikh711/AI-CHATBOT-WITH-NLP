@@ -74,6 +74,7 @@ git clone https://github.com/amaanshaikh711/Nexus-AI-Chatbot.git
 
 cd Nexus-AI-Chatbot
 
+
 ### **2️⃣ Install Dependencies **
 pip install -r requirements.txt
 
@@ -82,6 +83,7 @@ python app.py
 
 ### **4️⃣ Open The Browser**
 http://127.0.0.1:5000
+
 
 
 
