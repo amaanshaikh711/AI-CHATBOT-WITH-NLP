@@ -71,6 +71,7 @@ It fulfills the requirements of CODTECH **Task 3 – AI Chatbot with NLP**.
 
 ### **1️⃣ Clone the project**
 git clone https://github.com/amaanshaikh711/Nexus-AI-Chatbot.git
+
 cd Nexus-AI-Chatbot
 
 ### **2️⃣ Install Dependencies **
@@ -81,6 +82,7 @@ python app.py
 
 ### **4️⃣ Open The Browser**
 http://127.0.0.1:5000
+
 
 
 
