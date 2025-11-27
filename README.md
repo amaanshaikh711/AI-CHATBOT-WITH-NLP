@@ -1,122 +1,98 @@
-NEXUS AI — Intelligent Web Chatbot (Task 3 – CODTECH Internship)
-COMPANY: CODTECH IT SOLUTIONS
-NAME: AMAAN SHAIKH
-INTERN ID: CT06DR1460
-DOMAIN: Python & NLP Development
-DURATION: 6 Weeks
-MENTOR: Neela Santhosh Kumar
+# **NEXUS AI — Intelligent Web Chatbot (Task 3 – CODTECH Internship)**
 
-Nexus AI is a modern, web-based intelligent chatbot built using Flask, Google Gemini API, and NLP techniques. It provides a clean, responsive interface for chatting with AI in real time. This project was developed as part of Task 3 – AI Chatbot with NLP under the CODTECH Internship program.
+### **COMPANY:** CODTECH IT SOLUTIONS  
+### **NAME:** AMAAN SHAIKH  
+### **INTERN ID:** CT06DR1460 
+### **DOMAIN:** Python Programming  
+### **DURATION:** 6 Weeks  
+### **MENTOR:** Neela Santhosh Kumar  
 
-🚀 Project Overview
+---
 
-Nexus AI is designed to simulate human-like conversations through a simple and elegant interface.
+![Nexus AI](nexus-ai-7.png)
+
+Nexus AI is a modern, web-based intelligent chatbot built using **Flask**, **Google Gemini API**, and **NLP techniques**. It provides a clean, responsive interface for chatting with AI in real time. This project was developed as part of **Task 3 – AI Chatbot with NLP** under the CODTECH Internship program.
+
+---
+
+## 🚀 **Project Overview**
+
+Nexus AI is designed to simulate human-like conversations through a simple and elegant interface.  
 It processes user messages, sends them to Google Gemini, receives AI-generated responses, and displays them instantly.
 
 This project helped me apply:
 
-Natural Language Processing (NLP)
+- Natural Language Processing (NLP)
+- Python backend development
+- API Integration
+- HTML, CSS & JavaScript
+- Flask routing and templates
+- Session-based conversation handling
 
-Python backend development
+It fulfills the requirements of CODTECH **Task 3 – AI Chatbot with NLP**.
 
-API Integration
+---
 
-HTML, CSS & JavaScript
+## 🔧 **Tools & Technologies Used**
 
-Flask routing and templates
+### **Backend**
+- Python 3  
+- Flask  
+- Google Gemini API  
+- python-dotenv  
 
-Session-based conversation handling
+### **Frontend**
+- HTML5  
+- CSS3 (custom UI in `style.css`)  
+- JavaScript  
 
-It fulfills the requirements of CODTECH Task 3 – AI Chatbot with NLP.
+### **Utilities**
+- `google-generativeai`
+- `list_models.py`
+- `.env` file for secure key management
+- `Procfile` for server deployment
 
-🔧 Tools & Technologies Used
-Backend
+---
 
-Python 3
+## ✨ **Features**
 
-Flask
+- ⚡ Real-time chat with Nexus AI  
+- 💬 Session-based chat history  
+- 🎨 Modern, responsive UI  
+- 🔁 Clear chat option  
+- 🔧 Configurable AI model  
+- 📜 Model listing script  
+- 🧠 NLP-supported message processing  
 
-Google Gemini API
+---
 
-python-dotenv
-
-Frontend
-
-HTML5
-
-CSS3 (custom UI in style.css)
-
-JavaScript
-
-Utilities
-
-google-generativeai (Gemini integration)
-
-list_models.py (for listing available Gemini models)
-
-.env file for secure key management
-
-Procfile for deployment support
-
-✨ Features
-
-⚡ Real-time chat with Nexus AI
-
-💬 Session-based chat history
-
-🎨 Modern, responsive UI
-
-🔁 Clear chat option
-
-🔧 Configurable AI model
-
-📜 Automatic model listing script
-
-🧠 NLP-supported message handling
-
-📁 Project Structure
+## 📁 **Project Structure**
 Nexus-AI/
 │── static/
-│   ├── style.css
-│   ├── favicon.png
+│ ├── style.css
+│ ├── favicon.png
 │── templates/
-│   ├── index.html
+│ ├── index.html
 │── app.py
 │── list_models.py
 │── requirements.txt
 │── Procfile
-│── .env   (not included in repo)
+│── .env
 │── README.md
-│── nexus-ai.png
 
-🛠 Installation & Setup
-1️⃣ Clone the project
+## 🛠 **Installation & Setup**
+
+### **1️⃣ Clone the project**
 git clone https://github.com/amaanshaikh711/Nexus-AI-Chatbot.git
 cd Nexus-AI-Chatbot
 
-2️⃣ Create & activate virtual environment
-python -m venv venv
-venv\Scripts\activate        # Windows
-source venv/bin/activate     # Mac/Linux
-
-3️⃣ Install dependencies
+### **2️⃣ Install Dependencies **
 pip install -r requirements.txt
 
-4️⃣ Add your Gemini API key
-
-Create a .env file:
-
-GEMINI_API_KEY=YOUR_API_KEY
-GEMINI_MODEL=gemini-2.0-flash
-
-5️⃣ Run the Flask app
+### **3️⃣ Run the Flask Application**
 python app.py
 
-6️⃣ Open in browser
+### **4️⃣ Open The Browser**
 http://127.0.0.1:5000
 
-🧪 Listing Available AI Models
 
-Run this to view all Gemini models your key supports:
-
-python list_models.py
